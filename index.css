@@ -14,3 +14,12 @@
     margin: 10px 0 20px 53px;
 }
 
+.icon-large {
+    font-size: 750%;
+    text-align: center;
+    float: right;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 25px;
+    color: #F16D6B;
+}
