@@ -6,6 +6,23 @@
 
 }
 
+p {
+    color: #6991AC;
+    font-size: 110%;
+    line-height: 120%;
+    text-align: justify;
+    padding-left: 53px;
+}
+
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
 #banner {
     max-width: 100%;
 }
