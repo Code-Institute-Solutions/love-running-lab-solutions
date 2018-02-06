@@ -20,6 +20,10 @@ p {
     padding-left: 53px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 
 h2 {
     text-align: center;
@@ -53,4 +57,16 @@ h2 {
 
 #signpost-icon{
     color: green;
+}
+
+#times {
+    float: right;
+    width: 50%;
+    color: #ffffff;
+}
+
+#times ul p {
+    font-size: 100%;
+    color: #ffffff;
+    padding: 3px;
 }
