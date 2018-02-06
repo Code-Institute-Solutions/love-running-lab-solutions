@@ -38,6 +38,11 @@ section {
     width: 100%;
 }
 
+footer {
+    width: 100%;
+    background-color: #fafafa;
+}
+
 #banner {
     max-width: 100%;
 }
@@ -68,8 +73,6 @@ section {
     background: url(https://i.imgur.com/JOw5DVD.jpg);
 }
 
-
-
 #times {
     float: right;
     width: 50%;
@@ -80,4 +83,23 @@ section {
     font-size: 100%;
     color: #ffffff;
     padding: 3px;
+}
+
+
+.social_networks {
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+
+}
+
+.social_networks li {
+    display: inline;
+}
+
+.social_networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #6991AC;
 }
