@@ -8,4 +8,3 @@ function markAsDone() {
         checklistButton.innerText = "Ready to Run!";
     }
 }
-

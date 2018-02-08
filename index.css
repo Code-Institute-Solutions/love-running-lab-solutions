@@ -93,11 +93,11 @@ footer {
 
 }
 
-.social_networks li {
+.social-networks li {
     display: inline;
 }
 
-.social_networks i {
+.social-networks i {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
@@ -132,4 +132,37 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #overview,
+    #times,
+    .icon-large,
+    #locations,
+    #community {
+        width: 100%;
+        clear: both;
+    }
+
+
+    p {
+        padding: 0 53px 20px 53px;
+    }
+
+    #times {
+        float: left;
+        width: 50%;
+
+    }
+
+    #times ul p {
+        font-size: 70%;
+    }
+
+    .social-networks i {
+        font-size: 80%;
+    }
+
 }
