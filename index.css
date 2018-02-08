@@ -103,3 +103,33 @@ footer {
     padding: 5%;
     color: #6991AC;
 }
+#checklist-button {
+    color: #ffffff;
+    background: #F16D6B;
+    border: 1px #ffffff solid;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 11pt;
+    outline: none;
+}
+
+
+#checklist-button:hover {
+    border: 1px #F16D6B solid;
+    color: #F16D6B;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+#checklist-actions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#checklist-actions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
