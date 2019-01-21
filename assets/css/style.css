@@ -1,48 +1,95 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Oswald');
+
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Alegreya Sans', sans-serif;
-
 }
 
-body {
+body{
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-nav {
+
+/* header {
     width: 100%;
-    background-color: #555;
-    overflow: auto;
+    height: 70px; 
+} */
+
+ #banner, #menu{
+     line-height: 70px;
+}
+
+#banner{
+    float:left;
+    font-family: Oswald;
+    letter-spacing: 4px;
+    color: #555555;
+    margin-left: 55;
+    padding:0;
 }
 
 
-nav a {
-    float: left;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-}
+ nav li {
+    float: right;
+    margin:0;
+    padding:0;
+} 
+
+ nav > ul li{
+    margin-right: 30px
+} 
+
+
+
+ nav a {
+     text-decoration: none;
+     font-size: 20px;
+     letter-spacing: 4px;
+     color: #999999;
+ }  
 
 nav a:hover {
-    background-color: #000;
+    border-bottom: 1px solid #555555;
 }
 
-.active {
-    background-color: #F16D6B;
+.active{
+    border-bottom: 1px solid #555555;
 }
 
+#cover-image{
+    clear: both;
+    background: url(../img/LoveRunning2019.png);
+    background-size: cover;
+  background-position: center;
+  min-height: 650px;
+}
+
+#cover-text{
+   font-size: 160%;
+    font-family: Oswald;
+    color: #ffffff;
+    background-color: rgba(241, 109, 107, .7);
+    /* width: 20%; */
+    padding: 20 50 30 15;
+    /* margin-left:54px; */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position:absolute;
+    margin:0;
+  top: 400px;
+  right: 75px;
+  width: 280px;
+  height: 200px;
+     
+}
 
 p,
 ul {
-    color: #6991AC;
     font-size: 110%;
     line-height: 120%;
     text-align: justify;
-    padding-left: 53px;
 }
 
 ul {
@@ -50,71 +97,78 @@ ul {
 }
 
 
-h2 {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
 
+h2 {
+    padding: 10 0;
+    text-transform: uppercase;
+}
+
+
+#club-details {
+    width: 95%;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    margin-left:50px;
+}
+
+.activities{
+    padding: 30 0 0 0;
+    width: 30%;
+    color: #999999;
+}
+
+
+#who-summary{float:left;  }
+#docklands-summary{margin:0 auto;}
+#phoenix-summary{float:right;}
+
+
+.activities i{
+  color:#F16D6B;
+}
+
+.activities h2{
+    letter-spacing: 4px;
 }
 
 section {
-    min-height: 230px;
+    min-height: 250px;
     width: 100%;
+    margin:10 0 10 0;
 }
 
-footer {
-    width: 100%;
-    background-color: #fafafa;
-}
-
-#banner {
-    max-width: 100%;
-}
-
-#logo {
-    margin: 10px 0 20px 53px;
-}
-
-.icon-large,
-#signpost-icon {
-    font-size: 750%;
-    text-align: center;
-    float: right;
-    margin: 0 auto;
-    width: 50%;
-    padding-top: 25px;
-}
-
-.icon-large {
-    color: #F16D6B;
-}
-
-#signpost-icon {
-    color: #FFFFFF;
-}
 
 #locations {
-    background: url(https://i.imgur.com/JOw5DVD.jpg);
+    background: url(../img/DublinDocklands.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #times {
-    float: right;
-    width: 50%;
+    float: left;
+    height: 200px;
+    width: 400px;
+    padding: 10 0 10 10;
     color: #ffffff;
+    margin: 15 0 0 40;
+    background-color: rgba(241, 109, 107, .85);
+  
 }
 
 #times ul p {
     font-size: 100%;
     color: #ffffff;
-    padding: 3px;
+    padding: 3 10 3 0;
+}
+
+i{
+    padding: 0 0 0 10;
 }
 
 
 .social-networks {
     text-align: center;
-    padding-left: 0;
-    width: 100%;
 
 }
 
@@ -130,28 +184,41 @@ footer {
 }
 
 #photos {
+    clear: both;
     /* Prevent vertical gaps */
     line-height: 0;
-
-    -webkit-column-count: 3;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 3;
-    -moz-column-gap: 0px;
-    column-count:4;
-    column-gap: 10px;
-}
-
-#photos img {
+     
+    -webkit-column-count: 4;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    4;
+    -moz-column-gap:      0px;
+    column-count:         4;
+    column-gap:           0px;  
+  }
+  
+  #photos img {
     /* Just in case there are inline attributes */
     width: 100% !important;
     height: auto !important;
-}
+  }
 
 @media screen and (max-width: 768px) {
+    /* #overview{
+        width: 80%;
+        margin: 0 auto;
+    } */
+    #menu{
+        clear: both;
+        margin:0;
+        padding: 0;
+    }
 
-    #overview,
+    nav {
+      float: left;
+       margin-left: 55px;
+    } 
+    
     #times,
-    .icon-large,
     #locations,
     #community {
         width: 100%;
@@ -181,40 +248,39 @@ footer {
 
 
 @media screen and (max-width: 500px) {
-    .nav a {
+    /* .nav a {
         float: none;
         display: block;
-    }
+    } */
 }
 
 
 /*masonary */
-
 @media (max-width: 1200px) {
-  #photos {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
+    #photos {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
   }
-}
-@media (max-width: 1000px) {
-  #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
+  @media (max-width: 1000px) {
+    #photos {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
   }
-}
-@media (max-width: 800px) {
-  #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
+  @media (max-width: 800px) {
+    #photos {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
   }
-}
-@media (max-width: 400px) {
-  #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
-}
+  /* @media (max-width: 400px) {
+    #photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  } */
