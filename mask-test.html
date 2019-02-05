@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <style>
+
+body{
+    font-family: 'Lato';
+    color: #555555;
+    
+}
+
+p{
+    font-size: 90%;
+}
+
+h2{
+    text-transform:uppercase;
+}
+
+    #video-container{
+        width: 300px;
+        height: 300px;
+        padding: 30px;  
+        border-style: solid;
+        border-color: #cccccc;
+        border-width:1px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+     #video-cover-bg{
+        position: relative;
+        background:url(assets/img/video-mask.png) no-repeat center center;
+        border-radius: 50%;
+        height: 100%;
+    }
+
+
+    #play-button{
+        position: absolute;
+        opacity:.8;
+        top: 115px;
+        left :115px;
+
+   
+    }
+
+
+    #left-about{
+        padding-top: 30px;
+        /* line-height: 30px; */
+        /* background-color: #fafafa; */
+        width:33%;
+        float:left;
+    }
+
+    #center-about{
+        width:33%;
+        margin: auto;
+    }
+
+    #right-about{
+        /* position: relative; */
+        padding-top: 30px;
+        height: 300px;
+        width:33%;
+        float:right;
+        /* background-color: #fafafa; */
+    }
+
+    
+
+    .left-about-heading{
+        width: 50%;
+        float:right;
+        line-height: 20px;
+        clear: both;
+        margin-bottom: 20px;
+    }
+
+
+    .right-about-heading{
+        width: 50%;
+        float:left; 
+        line-height: 20px;
+        clear: both;
+        margin-bottom: 20px;
+    }
+
+    hr {
+      border:0;
+      padding:0;  
+    border-top: 1px solid #cccccc;
+    width: 250px;
+    margin-top:0;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+.right-about-heading h2 
+{
+    float:right;
+}
+
+
+.right-about-heading hr,
+.right-about-heading p{
+    float:right ;
+}
+
+h2{
+    font-family: Oswald;
+    color: #666666;
+}
+
+.right-about-heading p{
+    text-align: right;
+   
+}
+.right-about-content-align{
+    float: left;
+}
+
+
+    </style>
+</head>
+<body>
+    <section>
+    <div id="left-about">
+      <div class="left-about-heading">
+        <h2>Feel Healthy    <i class="fas fa-heartbeat"></i></h2> <hr>
+        <p>There are many things to be said in fairness to the man</p>
+      </div>
+      <div class="left-about-heading">
+            <h2>Feel Free <i class="fab fa-fly"></i></h2> <hr>
+            <p>There are many things to be said in fairness to the man</p>
+          </div>
+          
+    </div>
+       <div id="right-about">
+           <div class="right-about-content-align">
+            <div class="right-about-heading">
+                    <h2>Join a Community <i class="fas fa-globe"></i></h2> <hr>
+                    <p>There are many things to be said in fairness to the man</p>
+                  </div>
+                  <div class="right-about-heading">
+                        <h2>Feel Strong  <i class="fas fa-dumbbell"></i>  </h2> <hr>
+                        <p>There are many things to be said in fairness to the man</p>
+            </div>
+            </div>
+        </div>  
+        <div id="center-about">
+                <div id="video-container">
+                    <div id="video-cover-bg">
+                       
+                           <img id="play-button" src="assets/img/play.png" />
+                       
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+</body>
+</html>

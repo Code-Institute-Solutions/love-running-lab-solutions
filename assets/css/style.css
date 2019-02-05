@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 
 
 * {
@@ -8,22 +8,24 @@
 }
 
 body{
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: Lato;
 }
 
 
  #banner, #menu{
-     line-height: 70px;
+     line-height: 75px;
 }
 
-#banner{
+.banner{
     float:left;
     font-family: Oswald;
+    font-size: 280%;
     letter-spacing: 4px;
     color: #555555;
     margin-left: 55;
     padding:0;
 }
+
 
 
  nav li {
@@ -42,45 +44,70 @@ body{
      text-decoration: none;
      font-size: 20px;
      letter-spacing: 4px;
-     color: #999999;
+     color: #777777;
  }  
 
 nav a:hover {
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #777777;
 }
 
 .active{
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #777777;
 }
 
-#cover-image{
-    clear: both;
-    background: url(../img/LoveRunning2019.png);
-    background-size: cover;
+
+ .outer-div
+{
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  /* padding: 0;
+  margin:0; */
+}
+
+#cover-image
+{
+  height: 600px;
+  width: 100%;
+  background-size: cover;
   background-position: center;
-  min-height: 650px;
+  background: url(../img/form-bg.png) no-repeat center center;
+  /* padding: 0;
+  margin:0; */
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 
 #cover-text{
-   font-size: 160%;
+    font-size: 130%;
     font-family: Oswald;
     color: #ffffff;
     background-color: rgba(241, 109, 107, .7);
-    /* width: 20%; */
     padding: 20 50 30 15;
-    /* margin-left:54px; */
+   
     text-transform: uppercase;
     letter-spacing: 4px;
     position:absolute;
-    margin:0;
-  top: 400px;
-  right: 85px;
+
+  top: 360px;
+  right: 145px;
   width: 280px;
   height: 200px;
      
 }
 
-p,
+
 ul {
     font-size: 110%;
     line-height: 120%;
@@ -96,73 +123,74 @@ ul {
 h2 {
     padding: 10 0;
     text-transform: uppercase;
-}
-
-
-#club-details {
-    width: 95%;
-    /* padding-left: 50px; */
-    /* padding-right: 50px; */
-    margin-left:50px;
-}
-
-.activities{
-    padding: 30 0 0 0;
-    width: 30%;
-    color: #999999;
-}
-
-
-#who-summary{float:left; }
-#docklands-summary{margin:0 auto;}
-#phoenix-summary{float:right;}
-
-
-.activities i{
-  color:#F16D6B;
-}
-
-.activities h2{
     letter-spacing: 4px;
 }
 
-section {
-    min-height: 250px;
-    width: 100%;
-    margin:10 0 10 0;
+
+#club-ethos { 
+    height: 600px;
+    
 }
 
 
-#locations {
-    background: url(../img/DublinDocklands.png);
+section {
+    
+     /* min-height: 600px; */
+}
+
+#welcome{
+    /* padding-top: 30px; */
+    margin: 50 0 50 0;
+    font-family: Oswald;
+    font-size: 280%;
+    letter-spacing: 3px;
+    color: #555555;
+    text-align: center; 
+}
+
+
+#times {
+    background-image: url(../img/DublinDocklands.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width:100%;
+    /* margin: 0; */
+    overflow: hidden;
 }
 
-#times {
-    float: left;
-    height: 200px;
-    width: 400px;
-    padding: 10 0 10 10;
-    color: #ffffff;
-    margin: 15 0 0 40;
-    background-color: rgba(241, 109, 107, .85);
-  
-}
 
-#times ul p {
-    font-size: 100%;
-    color: #ffffff;
-    padding: 3 10 3 0;
-}
+
+#times div{
+    color:#fafafa;
+    background-color:rgba(0,0,0, .6);      
+    width: 19%;
+    height: 300px;
+    margin-left: 4px; 
+    float:left;
+    padding: 30 0 0 10;
+    text-align: center;
+    }
+
+    #times div h2{
+        color:#fafafa;
+    }
+
+
+    .day{
+        text-align: center;
+    }
+
 
 i{
-    padding: 0 0 0 10;
+ margin-left: 5px;
 }
 
-
+footer{
+    height: 150px;
+}
 .social-networks {
+  
     text-align: center;
 
 }
@@ -175,8 +203,95 @@ i{
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #6991AC;
+    color: #777777;
 }
+
+/* gallery */
+
+
+
+
+  /* Contact Form */
+
+  #form-section{
+    padding: 30 0;
+    clear: both;
+    background: url(../img/form-bg2.png);
+    /* background: url(../img/LoveRunning2019.png); */
+    /* opacity:.9; */
+    background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+#form-container{
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.8);
+    /* background-color: rgba(241, 109, 107, .9); */
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+
+.sub-heading {
+    margin-top: 35px;
+    line-height: 10%;
+  }
+  
+  .signup-form {
+    margin-top: 35px;
+  }
+  
+   label {
+    line-height: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding:0;
+  }
+  
+   .text-input {
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(254, 254, 254, 0.3);
+    border-radius: 5px;
+  }
+  
+   input:hover, input:focus {
+    border-color: #fff;
+  }
+  
+  legend{
+      margin-bottom: 15px;
+  }
+  
+  .running-preferences{
+      width: 100%;
+      margin-bottom:20px;
+      padding: 0;
+  }
+
+  .preference-label{
+      margin: 10 5 30 5;
+  }
+  
+  
+  .join-button {
+      border-radius: 3px;
+      color:#999999;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+
+  }
+
+/* End Contact Form */
+
 
 #photos {
     clear: both;
@@ -188,7 +303,7 @@ i{
     -moz-column-count:    4;
     -moz-column-gap:      0px;
     column-count:         4;
-    column-gap:           0px;  
+    column-gap:           3 px;  
   }
   
   #photos img {
@@ -197,11 +312,110 @@ i{
     height: auto !important;
   }
 
+  /* end gallery */
+
+
+
+  p{
+    font-size: 90%;
+}
+
+h2{
+    text-transform:uppercase;
+    font-family: Oswald;
+    letter-spacing: 4px;
+    color: #666666;
+}
+
+    #circle-container{
+        width: 300px;
+        height: 300px;
+        padding: 30px;  
+        border-style: solid;
+        border-color: #cccccc;
+        border-width:1px;
+        border-radius: 50%;
+        margin:0 auto;
+    }
+
+     #circle-cover-bg{
+        position: relative;
+        background:url(../img/video-mask.png) no-repeat center center;
+        border-radius: 50%;
+        height: 100%;
+    }
+
+
+
+    #left-about{
+        padding-top: 30px;
+        width:33%;
+        float:left;
+    }
+
+    #center-about{
+        width:33%;
+        margin: auto;
+    }
+
+    #right-about{
+        padding-top: 30px;
+        width:33%;
+        float:right;
+       
+    }
+
+    
+
+    .left-about-heading{
+        width: 50%;
+        float:right;
+        line-height: 20px;
+        clear: both;
+        margin-bottom: 50px;
+    }
+
+
+
+    .right-about-heading{
+        width: 50%;
+        float:left; 
+        line-height: 20px;
+        clear: both;
+        margin-bottom: 50px;
+    }
+
+    hr {
+      border:0;
+      padding:0;  
+    border-top: 1px solid #cccccc;
+    width: 250px;
+    margin-top:0;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+.right-about-heading h2 
+{
+    float:right;
+}
+
+
+.right-about-heading hr,
+.right-about-heading p{
+    float:right;
+}
+
+
+
+.right-about-heading p{
+    text-align: right; 
+}
+
+
+ 
 @media screen and (max-width: 768px) {
-    /* #overview{
-        width: 80%;
-        margin: 0 auto;
-    } */
+    
     #menu{
         clear: both;
         margin:0;
@@ -213,58 +427,116 @@ i{
        margin-left: 55px;
     }
 
-    #cover-text{
-        
-       top: 400px;
-       left: 50px;
-       width: 280px;
-       height: 200px;
-          
-     }
+    
     
     .activities{
-        /* padding: 0 0 0 0; */
-        width: 100%;
-    }
-    #who-summary{clear: both; }
-    #docklands-summary{clear: both; float: left;	}
-    #phoenix-summary{clear: both; float: left}
     
-    #times,
-    #locations,
-    #community {
         width: 100%;
-        clear: both;
     }
-
+    
 
     p {
         padding: 0 53px 20px 0px;
         
     }
 
-    #times {
-        float: left;
-        width: 50%;
-
-    }
-
-    #times ul p {
-        font-size: 70%;
-    }
-
     .social-networks i {
         font-size: 80%;
+    }
+
+    #form-container{
+        width: 70%;
     }
 
 }
 
 
 @media screen and (max-width: 500px) {
-    /* .nav a {
-        float: none;
-        display: block;
-    } */
+
+    .outer-div
+{
+  height: 550px;
+  
+}
+    
+    #welcome{
+        /* padding-top: 30px; */
+        margin-top: 0;
+    }
+
+
+
+    #times div{
+        width: 100%;
+        clear: both;
+        height: 150px;
+        border-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #fff;
+        padding: 0;
+    }
+
+
+#cover-image
+{
+ height: 500px;
+  background-size: cover;
+  background-position: center;
+  background: url(../img/form-bg.png) no-repeat ;
+  
+}
+    #cover-text{
+        left: 0px; 
+    }
+
+
+
+    #left-about, 
+    #right-about,
+    #center-about
+    {
+        width: 100%;
+        float: left;
+        margin:0;
+        padding: 0;
+
+    }
+
+    #center-about{
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+
+    .left-about-heading,
+    .right-about-heading
+    {
+        width: inherit;
+        
+    }
+
+
+.right-about-heading h2,
+.left-about-heading h2
+{
+    width: 100%;
+    text-align: center;
+}
+
+.left-about-heading p,
+.left-about-heading p
+{
+    /* this is a hack - need to fix */
+   text-align: right; 
+}
+
+hr{
+    width:0%;
+}
+
+
+
+
 }
 
 

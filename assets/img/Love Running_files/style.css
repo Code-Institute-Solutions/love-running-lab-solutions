@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Oswald|Lora');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Alegreya Sans';
+}
+
+
+ #banner, #menu{
+     line-height: 75px;
+}
+
+.banner{
+    float:left;
+    font-family: Oswald;
+    font-size: 280%;
+    letter-spacing: 4px;
+    color: #555555;
+    margin-left: 55;
+    padding:0;
+}
+
+
+ nav li {
+    float: right;
+    margin:0;
+    padding:0;
+} 
+
+ nav > ul li{
+    margin-right: 30px
+} 
+
+
+
+ nav a {
+     text-decoration: none;
+     font-size: 20px;
+     letter-spacing: 4px;
+     color: #777777;
+ }  
+
+nav a:hover {
+    border-bottom: 1px solid #777777;
+}
+
+.active{
+    border-bottom: 1px solid #777777;
+}
+
+#cover-image{
+    clear: both;
+    background: url(../img/LoveRunning2019.png);
+    background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+#cover-text{
+   font-size: 160%;
+    font-family: Oswald;
+    color: #ffffff;
+    background-color: rgba(241, 109, 107, .7);
+    /* width: 20%; */
+    padding: 20 50 30 15;
+    /* margin-left:54px; */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position:absolute;
+    margin:0;
+  top: 400px;
+  right: 85px;
+  width: 280px;
+  height: 200px;
+     
+}
+
+p,
+ul {
+    font-size: 110%;
+    line-height: 120%;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+h2 {
+    padding: 10 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+#club-details {
+    width: 95%;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    margin-left:50px;
+}
+
+.activities{
+    padding: 30 20;
+    width: 30%;
+    color: #777777;
+    /* background-color: #fafafa; */
+    min-height: 200px;
+}
+
+
+#who-summary{float:left; }
+#docklands-summary{margin:80 auto 40 auto;}
+#phoenix-summary{float:right;}
+
+
+.activities i{
+  color:#F16D6B;
+}
+
+.activities h2{
+    letter-spacing: 4px;
+}
+
+section {
+    min-height: 600px;
+    width: 100%;
+}
+
+
+#locations {
+    background: url(../img/DublinDocklands.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+#times {
+    float: left;
+    height: 200px;
+    width: 400px;
+    padding: 10 0 10 10;
+    color: #ffffff;
+    margin: 100 0 0 40;
+    background-color: rgba(241, 109, 107, .85);
+  
+}
+
+#times ul p {
+    font-size: 100%;
+    color: #ffffff;
+    padding: 3 10 3 0;
+}
+
+i{
+    padding: 0 0 0 10;
+}
+
+footer{
+    height: 150px;
+}
+.social-networks {
+  
+    text-align: center;
+
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #6991AC;
+}
+
+/* gallery */
+
+
+
+
+  /* Contact Form */
+
+  #form-section{
+    padding: 30 0;
+    clear: both;
+    background: url(../img/LoveRunningFormBg.png);
+    background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+#form-container{
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.8);
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+
+.sub-heading {
+    margin-top: 35px;
+    line-height: 10%;
+  }
+  
+  .signup-form {
+    margin-top: 35px;
+  }
+  
+   label {
+    line-height: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding:0;
+  }
+  
+   .text-input {
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(254, 254, 254, 0.3);
+    border-radius: 5px;
+  }
+  
+   input:hover, input:focus {
+    border-color: #fff;
+  }
+  
+  legend{
+      margin-bottom: 15px;
+  }
+  
+  .running-preferences{
+      width: 100%;
+      margin-bottom:20px;
+      padding: 0;
+  }
+
+  .preference-label{
+      margin: 10 5 30 5;
+  }
+  
+  
+  .join-button {
+      border-radius: 3px;
+      color:#999999;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+
+  }
+
+/* End Contact Form */
+
+
+#photos {
+    clear: both;
+    /* Prevent vertical gaps */
+    line-height: 0;
+     
+    -webkit-column-count: 4;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    4;
+    -moz-column-gap:      0px;
+    column-count:         4;
+    column-gap:           0px;  
+  }
+  
+  #photos img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* end gallery */
+
+
+
+
+
+
+  #video-container2{
+      width: 300px;
+      height: 300px;
+      padding: 30px;  
+      border-style: solid;
+      border-color: #cccccc;
+      border-width:1px;
+      border-radius: 50%;
+      margin:10% auto;
+  }
+
+   #video-cover-bg{
+      background:url(../img/video-mask.png) no-repeat center center;
+      border-radius: 50%;
+      height: 100%;
+      line-height: 200px;
+  }
+
+
+  #play-button{
+       
+      opacity:.5;
+      vertical-align: middle;
+      padding-left: 30%;
+
+ 
+  }
+
+@media screen and (max-width: 768px) {
+    
+    #menu{
+        clear: both;
+        margin:0;
+        padding: 0;
+    }
+
+    nav {
+      float: left;
+       margin-left: 55px;
+    }
+
+    #cover-text{
+        
+       top: 400px;
+       left: 50px;
+       width: 280px;
+       height: 200px;
+          
+     }
+    
+    .activities{
+    
+        width: 100%;
+    }
+    #who-summary{clear: both; }
+    #docklands-summary{clear: both; float: left;	}
+    #phoenix-summary{clear: both; float: left}
+    
+    #times,
+    #locations,
+    #community {
+        width: 100%;
+        clear: both;
+    }
+
+
+    p {
+        padding: 0 53px 20px 0px;
+        
+    }
+
+    #times {
+        float: left;
+        width: 50%;
+
+    }
+
+    #times ul p {
+        font-size: 70%;
+    }
+
+    .social-networks i {
+        font-size: 80%;
+    }
+
+    #form-container{
+        width: 70%;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    /* .nav a {
+        float: none;
+        display: block;
+    } */
+}
+
+
+/*masonary */
+@media (max-width: 1200px) {
+    #photos {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 1000px) {
+    #photos {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+  }
+  @media (max-width: 800px) {
+    #photos {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+  }
+  /* @media (max-width: 400px) {
+    #photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  } */
