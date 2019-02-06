@@ -523,11 +523,12 @@ h2{
     text-align: center;
 }
 
-.left-about-heading p,
+.right-about-heading p,
 .left-about-heading p
 {
-    /* this is a hack - need to fix */
-   text-align: right; 
+
+   text-align: center;
+   padding: 0 20 0 20;
 }
 
 hr{
