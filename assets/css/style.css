@@ -56,13 +56,12 @@ nav a:hover {
 }
 
 
- .outer-div
+ .hero-outer
 {
   height: 600px;
   width: 100%;
   overflow: hidden;
-  /* padding: 0;
-  margin:0; */
+  
 }
 
 #cover-image
